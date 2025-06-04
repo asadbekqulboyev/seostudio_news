@@ -1,0 +1,103 @@
+.features {
+    padding: 75px 0;
+
+    &_items {
+        margin-top: 45px;
+        flex-wrap: wrap;
+        gap: 40px 0;
+        @media (max-width:1024px) {
+            flex-wrap: wrap;
+        }
+        @media(max-width:768px) {
+            gap: 25px 0;
+        }
+
+    }
+
+    &_item {
+        width: calc(33.33% - 20px);
+        @media (max-width:1024px) {
+            width: calc(50% - 20px);
+        }
+        @media (max-width:768px) {
+            width: calc(50% - 10px);
+        }
+        @media (max-width:556px) {
+            width:100%;
+        }
+        .features_number {
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background: linear-gradient(85deg, #00C3FF 29.32%, #7BE0FF 67.76%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        
+        &:nth-child(2),
+        &:nth-child(5) {
+            .features_number {
+                background: linear-gradient(265deg, #7CBEFF 31.87%, #178CFF 66.24%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+
+            }
+        }
+
+        &:nth-child(3),
+        &:nth-child(6) {
+            .features_number {
+                background: linear-gradient(214deg, #3730B2 20.76%, #0900FF 79.87%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        @media (max-width:1024px) {
+            &:nth-child(1){
+                order: 0;
+            }
+            
+            &:nth-child(4){
+                order: 1;
+            }
+            &:nth-child(2){
+                order: 2;
+            }
+            &:nth-child(3){
+                order:5;
+            }
+            &:nth-child(6){
+                order: 7;
+            }
+            &:nth-child(5){
+                order: 2;
+            }
+            &:nth-child(6){
+                order: 6;
+            }
+        }
+       
+
+        .features_title {
+            color: #333;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            margin-top: 5px;
+            @media (max-width:556px) {
+                margin-top: 10px;
+            }
+        }
+
+        .features_description{
+            color: #333;
+            margin-top: 10px;
+        }
+    }
+}
