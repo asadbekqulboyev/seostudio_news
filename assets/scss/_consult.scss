@@ -1,0 +1,113 @@
+.consult {
+  padding: 80px 0;
+  .container {
+    border-radius: 23px;
+    background: linear-gradient(106deg, #19428e 7.43%, #2b72f4 94.39%);
+    padding: 46px;
+  }
+  .section_title {
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &_form {
+    gap: 20px 32px;
+    margin-top: 32px;
+
+    input {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      outline: 0;
+      border-radius: 100px;
+      border: 1px solid #eaeaea;
+      color: #fff;
+      max-width: 265px;
+      padding: 13px 20px;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+    .consultation_item {
+      &:last-child {
+        margin-top: 5px;
+      }
+    }
+
+    .check {
+      gap: 5px;
+
+      .check_title {
+        color: #fff;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+      }
+
+      .check_link {
+        color: #fff;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+
+    .button {
+      width: fit-content !important;
+      color: #fe4c1c;
+      @media (max-width: 556px) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .consultation_content_list {
+    gap: 49px;
+    width: calc(32% - 28px);
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 49px 24px;
+      flex-direction: row !important;
+    }
+    @media (max-width: 768px) {
+      margin-top: 18px;
+      gap: 30px 0;
+    }
+
+    .consultation_content_item {
+      gap: 10px;
+      align-items: flex-start;
+      @media (max-width: 768px) {
+        width: calc(50% - 12px);
+      }
+      @media (max-width: 556px) {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .consultation_content_title {
+        color: #333;
+        font-weight: 700;
+      }
+      .consultation_content_desciption {
+        margin-top: 5px;
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
+        @media (max-width: 768px) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

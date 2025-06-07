@@ -8,7 +8,9 @@
     font-size: 40px;
     font-weight: 600;
     padding-top: 60px;
-
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
     @media (max-width: 556px) {
       font-size: 26px;
       padding-top: 48px;
@@ -21,6 +23,9 @@
     width: 100%;
     margin-top: 24px;
     color: #fff;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
     @media (max-width: 556px) {
       font-size: 16px;
     }
@@ -28,6 +33,9 @@
   &_form {
     gap: 20px 32px;
     margin-top: 86px;
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    }
     label {
       max-width: 599px;
       width: 100%;
@@ -42,13 +50,19 @@
       padding: 13px 20px;
       outline: none;
     }
-    
+    .button {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
     p {
       color: #bec1c4;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      text-align: center;
       a {
         text-decoration-line: underline;
         color: #bec1c4;
@@ -59,6 +73,9 @@
     margin-top: 42px;
     max-width: 100%;
     position: relative;
+    @media (max-width: 768px) {
+      margin-top: 78px;
+    }
     img:first-child {
       max-width: 100%;
       object-fit: contain;
@@ -67,6 +84,10 @@
       position: absolute;
       right: 211px;
       bottom: -32px;
+      @media (max-width: 768px) {
+        right: 10%;
+        max-width: 30%;
+      }
     }
   }
 }
