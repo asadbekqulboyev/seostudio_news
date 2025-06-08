@@ -1,34 +1,90 @@
 .online_site {
+  padding: 80px 0 0;
   .site_banner {
-    background: url(../images/clip_bg.svg) no-repeat center/100%;
+    background: url(../images/clip_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     max-width: 510px;
     width: 100%;
+    @media (max-width: 1024px) {
+      background: url(../images/banner_mobile.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      max-width: 100%;
+    }
   }
   &_items {
     gap: 50px 0;
+    margin-top: 50px;
+    @media (max-width: 1024px) {
+      gap: 20px 0;
+    }
   }
   &_item {
     border-radius: 23px;
     background: #f1f5f9;
     gap: 87px;
     overflow: hidden;
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse !important;
+      gap: 12px;
+    }
     &:nth-child(even) {
       .site_banner {
         background: url(../images/site_bg.svg) no-repeat center/100%;
+        @media (max-width: 1024px) {
+          background: url(../images/banner_mobile.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+          max-width: 100%;
+        }
       }
       .site_info {
         padding: 32px 50px 32px 0px;
+        @media (max-width: 1024px) {
+          width: 100%;
+          padding: 0 20px 55px;
+
+        }
+        & > img {
+          @media (max-width: 1024px) {
+            width: 62px;
+            
+          }
+          
+        }
+      }
+      @media (max-width: 1024px) {
+        flex-direction: column !important;
       }
     }
     .site_info {
       color: #222529;
       padding: 32px 0px 32px 50px;
+      @media (max-width: 1024px) {
+        width: 100%;
+        padding: 0 20px 55px;
+      }
+      & > img {
+        @media (max-width: 1024px) {
+          width: 62px;
+        }
+      }
       &_title {
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         margin-top: 24px;
+        @media (max-width: 1024px) {
+          margin-top: 32px;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
       }
       .site_list_title {
         color: #8e939a;
@@ -45,6 +101,12 @@
           gap: 12px;
         }
       }
+    }
+    @media (max-width: 1240px) {
+      gap: 20px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column;
     }
   }
 }
