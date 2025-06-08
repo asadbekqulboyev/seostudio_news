@@ -1,8 +1,22 @@
 .seo_section {
   padding: 80px 0;
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 556px) {
+    padding: 50px 0;
+  }
   .section_title {
     margin-top: 80px;
     padding-bottom: 50px;
+    @media (max-width: 768px) {
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 556px) {
+      margin-top: 50px;
+      padding-bottom: 32px;
+    }
   }
   &_info {
     color: #222529;
@@ -17,17 +31,30 @@
       font-weight: 700;
       line-height: normal;
       margin: 0;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
       &.last {
         margin-top: 32px;
+        @media (max-width: 556px) {
+          margin-top: 28px;
+        }
       }
     }
     p {
       margin-top: 32px;
+      @media (max-width: 768px) {
+        margin-top: 24px;
+      }
+      @media (max-width: 556px) {
+        margin-top: 20px;
+      }
     }
-    
   }
   a {
     margin: 20px auto 0;
+    @media (max-width: 556px) {
+      width: 100%;
+    }
   }
-  
 }

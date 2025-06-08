@@ -4,7 +4,6 @@
 @import "contents";
 @import "price";
 @import "online_site";
-@import "seo_training";
 @import "advantages";
 @import "features";
 @import "comments";
@@ -58,6 +57,9 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
   @media (max-width: 556px) {
     font-size: 26px;
   }
@@ -87,6 +89,7 @@ body {
     border: 1px solid #2b72f4;
     background: #fff;
     color: #2b72f4;
+    text-align: center;
   }
 }
 .blue {
@@ -121,5 +124,9 @@ body {
     width: 100%;
     height: 38px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, #fff 100%);
+  }
+  &.no-after::after {
+    opacity: 0;
+    pointer-events: none;
   }
 }
