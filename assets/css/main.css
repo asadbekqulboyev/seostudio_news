@@ -1425,6 +1425,16 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 1200px) {
+  .consult .section_title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .consult .section_title {
+    font-size: 22px;
+  }
+}
 .consult_form {
   gap: 20px 32px;
   margin-top: 32px;

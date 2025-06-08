@@ -17,6 +17,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @media (max-width: 1200px) {
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 
   &_form {
