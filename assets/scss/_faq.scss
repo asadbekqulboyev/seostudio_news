@@ -1,5 +1,13 @@
 .faq {
   padding: 80px 0 0;
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+  .section_title {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
   &_items {
     border-radius: 23px;
     background: #fff;
@@ -8,6 +16,13 @@
     margin-top: 50px;
     gap: 20px;
     color: #222529;
+    @media (max-width: 768px) {
+      margin-top: 32px;
+      padding: 20px;
+      border-radius: 23px;
+      background: #fff;
+      box-shadow: -4px 4px 29px 0px rgba(0, 0, 0, 0.15);
+    }
   }
   &_item {
     &:first-child {
@@ -17,7 +32,7 @@
     &:last-child {
       padding-bottom: 0;
     }
-    padding: 20px 0;
+    padding: 20px 0 0;
     gap: 20px;
     border-top: 1px solid #eaeaea;
     &_header {
@@ -26,6 +41,9 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
 }

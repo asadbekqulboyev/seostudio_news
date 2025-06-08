@@ -8,10 +8,21 @@
   @media (max-width: 1024px) {
     margin-top: 50px;
   }
+  @media (max-width: 768px) {
+    background: url(../images/mobile_clippath.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
   &_items {
     margin-top: 63px;
     gap: 39px 0;
     padding-bottom: 95px;
+    @media (max-width: 768px) {
+      gap: 20px;
+      padding-bottom: 50px;
+      margin-top: 22px;
+    }
   }
   &_item {
     width: calc(50% - 63px);
@@ -22,6 +33,7 @@
     }
     @media (max-width: 768px) {
       width: 100%;
+      gap: 13px;
     }
     &-img {
       background: #fff;
@@ -29,6 +41,13 @@
       height: 84px;
       flex: 0 0 auto;
       border-radius: 50%;
+      @media (max-width: 768px) {
+        width: 62px;
+        height: 62px;
+        img {
+          width: 24px;
+        }
+      }
     }
     &_title {
       color: #fff;
@@ -36,6 +55,9 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
     p {
       margin-top: 20px;
@@ -57,6 +79,11 @@
     border: 15px solid #fff;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 768px) {
+      width: 112px;
+      height: 112px;
+      margin-bottom: -100px;
+    }
     img {
       transition: all 1s linear;
       position: relative;
