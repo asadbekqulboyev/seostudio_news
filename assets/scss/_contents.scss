@@ -114,7 +114,7 @@
         width: 100%;
       }
     }
-    &:nth-child(n + 2) {
+    &:nth-child(even) {
       padding-top: 32px;
       border-top: 1px solid #eaeaea;
       @media (max-width: 1024px) {
@@ -156,6 +156,11 @@
     }
     .hiden_text {
       color: #222529;
+      max-height: 152px;
+      overflow: hidden;
+      &.no-after {
+        max-height: fit-content;
+      }
       &::after {
         height: 37px;
       }
