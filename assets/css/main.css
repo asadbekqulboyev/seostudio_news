@@ -336,6 +336,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  display: inline;
 }
 @media (max-width: 1024px) {
   .analytics_page_item .section_title {
@@ -362,6 +363,15 @@
   color: #222529;
   max-height: 152px;
   overflow: hidden;
+  color: #222529;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.analytics_page_item .hiden_text h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0;
 }
 .analytics_page_item .hiden_text.no-after {
   max-height: fit-content;
@@ -378,8 +388,14 @@
     width: 100%;
   }
 }
+.analytics_page_item_left .number {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  color: #2b72f4;
+}
 @media (max-width: 768px) {
-  .analytics_page_item_left .section_title span {
+  .analytics_page_item_left .number {
     width: 47px;
     height: 47px;
     border-radius: 50%;

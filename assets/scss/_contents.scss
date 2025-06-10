@@ -136,6 +136,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      display: inline;
       @media (max-width: 1024px) {
         font-size: 22px;
       }
@@ -158,6 +159,16 @@
       color: #222529;
       max-height: 152px;
       overflow: hidden;
+      color: #222529;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      h2{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 16px 0;
+      }
+
       &.no-after {
         max-height: fit-content;
       }
@@ -172,24 +183,27 @@
       @media (max-width: 768px) {
         width: 100%;
       }
-      .section_title {
-        span {
-          @media (max-width: 768px) {
-            width: 47px;
-            height: 47px;
-            border-radius: 50%;
-            background: #2b72f4;
-            flex: 0 0 auto;
-            display: flex;
-            font-size: 22px;
-            color: #fff;
-            justify-content: center;
-            align-items: center;
-            line-height: normal;
-            padding: 6px;
-          }
+      .number {
+        font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  color:#2b72f4;
+        @media (max-width: 768px) {
+          width: 47px;
+          height: 47px;
+          border-radius: 50%;
+          background: #2b72f4;
+          flex: 0 0 auto;
+          display: flex;
+          font-size: 22px;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          line-height: normal;
+          padding: 6px;
         }
       }
+     
       .button.no_bg {
         @media (max-width: 768px) {
           width: 100%;
