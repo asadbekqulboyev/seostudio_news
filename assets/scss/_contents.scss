@@ -68,10 +68,14 @@
           position: relative;
           padding-left: 30px;
           list-style: none;
-          color: #222529;
-          font-size: 16px;
+
           font-style: normal;
           font-weight: 400;
+          a {
+            color: #222529;
+            font-size: 16px;
+            text-decoration: none;
+          }
           &::before {
             content: "";
             position: absolute;
@@ -163,7 +167,7 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      h2{
+      h2 {
         font-size: 20px;
         font-weight: 700;
         margin: 16px 0;
@@ -179,7 +183,7 @@
       &::after {
         height: 37px;
       }
-      p{
+      p {
         @media (max-width: 768px) {
           font-size: 14px;
         }
@@ -194,9 +198,9 @@
       }
       .number {
         font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  color:#2b72f4;
+        font-style: normal;
+        font-weight: 700;
+        color: #2b72f4;
         @media (max-width: 768px) {
           width: 47px;
           height: 47px;
@@ -212,7 +216,7 @@
           padding: 6px;
         }
       }
-     
+
       .button.no_bg {
         @media (max-width: 768px) {
           width: 100%;

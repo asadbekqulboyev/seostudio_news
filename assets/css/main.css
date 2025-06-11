@@ -263,10 +263,13 @@
   position: relative;
   padding-left: 30px;
   list-style: none;
-  color: #222529;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+.seo_analysis .seo_audit__block ul li a {
+  color: #222529;
+  font-size: 16px;
+  text-decoration: none;
 }
 .seo_analysis .seo_audit__block ul li::before {
   content: "";
