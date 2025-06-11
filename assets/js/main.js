@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const phoneInput = document.getElementById("phone_input");
-  Inputmask("+7 (999) 999-99-99").mask(phoneInput);
-});
+
 $(".seo_section .button").click(function (e) {
   e.preventDefault();
 
@@ -21,7 +18,12 @@ $(".analytics_page_item .button.no_bg").click(function (e) {
   $(this).prev(".hiden_text").toggleClass("no-after");
   if ($(this).prev(".hiden_text").hasClass("no-after")) {
     $(this).text("Свернуть текст");
+    
+    $(this).parents('.analytics_page_item').css({'align-items': 'start !important'})
+    
   } else {
     $(this).text("Развернуть текст");
+    $(this).parents('.analytics_page_item').removeClass('align-items-start')
   }
 });
+Inputmask('+7 (999) 999-99-99').mask($('input[type="tel"]'))

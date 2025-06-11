@@ -217,7 +217,7 @@
               <ul class="seo_price_item_bottom d-flex justify-content-between align-items-center">
                 <li><a href="#" class="link_btn">10 000 ₽</a></li>
                 <li>
-                  <a href="#" class="button no_bg">Заказать</a>
+                  <a href="#" class="button no_bg" data-bs-toggle="modal" data-bs-target="#myModal">Заказать</a>
                 </li>
               </ul>
             </div>
@@ -5925,10 +5925,50 @@
       </section>
     </main>
   </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+
+        <div class="modal-body d-flex align-items-center justify-content-between">
+          <!-- Rasm joyi -->
+          <div class="modal__contents">
+
+            <div class="modal_top">
+              <h2 class="section_title">Оставьте заявку</h2>
+              <p class="text-muted mt-1">и наш SEO специалист свяжется с Вами в ближайшее время</p>
+            </div>
+            <div class="modal__contents_inputs flex flex-wrap justify-content-between ">
+              <div class="modal__contents_input">
+                <input type="text" class="form-control" placeholder="Ваше имя" id="name" required />
+              </div>
+              <div class="modal__contents_input">
+                <input type="tel" class="form-control phone_input" placeholder="Номер телефона" id="phone" required />
+              </div>
+              <div class="modal__contents_input">
+                <input type="url" class="form-control" placeholder="Адрес Вашего сайта" id="website" required />
+              </div>
+              <button type="submit" class="button   ">Заказать исправление</button>
+            </div>
+          </div>
+
+          <div class="img-container d-flex align-items-start">
+            <!-- Rasmni o'z manzilingiz bilan almashtiring -->
+            <img src="assets/images/modal_img.png" alt="Rasm" class="img-fluid" />
+            <button class="close" data-bs-dismiss="modal" aria-label="Close">
+              <img src="assets/images/exit.svg " alt="">
+            </button>
+          </div>
+          <!-- Forma -->
+
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
