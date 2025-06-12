@@ -300,6 +300,7 @@
   }
 }
 .analytics_page_item {
+  overflow: visible;
   gap: 74px;
 }
 @media (max-width: 1200px) {
@@ -333,6 +334,18 @@
 }
 .analytics_page_item:nth-child(even) .button {
   margin: 20px 0 0 auto;
+}
+.analytics_page_item.align-items-start {
+  align-items: flex-start !important;
+}
+.analytics_page_item.align-items-start .item_image {
+  position: sticky;
+  top: 20px;
+}
+@media (max-width: 1200px) {
+  .analytics_page_item.align-items-start .item_image {
+    position: static;
+  }
 }
 .analytics_page_item .section_title {
   font-size: 26px;
