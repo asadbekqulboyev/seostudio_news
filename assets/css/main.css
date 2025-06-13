@@ -1684,6 +1684,10 @@
     right: 20px;
   }
 }
+.modal .policy {
+  color: #222529;
+  text-align: center;
+}
 
 *,
 h1,
