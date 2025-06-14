@@ -204,8 +204,10 @@
     &_left {
       position: relative;
       z-index: 2;
-      @media (max-width: 768px) {
+      max-width: 35%;
+      @media (max-width: 1200px) {
         width: 100%;
+        max-width: 100%;
       }
       .number {
         font-size: 26px;
@@ -237,18 +239,24 @@
   }
   .item_image {
     position: relative;
+    max-width: 65%;
+    @media (max-width: 1200px) {
+      width: 100%;
+      max-width: 100%;
+    }
+    picture {
+      max-width: 100%;
+    }
     @media (max-width: 768px) {
       width: 100%;
     }
     img:not(.bg) {
       border-radius: 23px;
       background: #fff;
-      padding: 5px;
       position: relative;
       z-index: 1;
-      @media (max-width: 768px) {
-        padding: 0;
-      }
+      object-fit: contain;
+      width: 100%;
     }
     .bg {
       position: absolute;

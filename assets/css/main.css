@@ -409,10 +409,12 @@
 .analytics_page_item_left {
   position: relative;
   z-index: 2;
+  max-width: 35%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .analytics_page_item_left {
     width: 100%;
+    max-width: 100%;
   }
 }
 .analytics_page_item_left .number {
@@ -444,6 +446,16 @@
 }
 .analytics_page .item_image {
   position: relative;
+  max-width: 65%;
+}
+@media (max-width: 1200px) {
+  .analytics_page .item_image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.analytics_page .item_image picture {
+  max-width: 100%;
 }
 @media (max-width: 768px) {
   .analytics_page .item_image {
@@ -453,14 +465,10 @@
 .analytics_page .item_image img:not(.bg) {
   border-radius: 23px;
   background: #fff;
-  padding: 5px;
   position: relative;
   z-index: 1;
-}
-@media (max-width: 768px) {
-  .analytics_page .item_image img:not(.bg) {
-    padding: 0;
-  }
+  object-fit: contain;
+  width: 100%;
 }
 .analytics_page .item_image .bg {
   position: absolute;
