@@ -43,6 +43,17 @@
       @media (max-width: 768px) {
         padding: 12px 64px;
       }
+      &.mobile {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+      &.desctop {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
     }
   }
   .modal-body {
@@ -66,10 +77,14 @@
   }
   .img-container {
     flex: 0 0 auto;
+
     & > img {
       @media (max-width: 768px) {
         width: 100%;
         object-fit: contain;
+      }
+      @media (max-width: 556px) {
+        display: none !important;
       }
     }
     .close {

@@ -1661,6 +1661,19 @@
     padding: 12px 64px;
   }
 }
+.modal .modal-dialog .button.mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .modal .modal-dialog .button.mobile {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .modal .modal-dialog .button.desctop {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .modal .modal-body {
     flex-direction: column-reverse;
@@ -1687,6 +1700,11 @@
   .modal .img-container > img {
     width: 100%;
     object-fit: contain;
+  }
+}
+@media (max-width: 556px) {
+  .modal .img-container > img {
+    display: none !important;
   }
 }
 @media (max-width: 768px) {
