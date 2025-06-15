@@ -369,7 +369,12 @@
 @media (max-width: 1024px) {
   .analytics_page_item .section_title .button {
     padding: 6px;
-    font-size: 22px;
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 768px) {
+  .analytics_page_item .section_title .button {
+    font-size: 20px !important;
   }
 }
 .analytics_page_item .button {

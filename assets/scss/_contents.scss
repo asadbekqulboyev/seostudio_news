@@ -163,7 +163,10 @@
         font-weight: 700;
         @media (max-width: 1024px) {
           padding: 6px;
-          font-size: 22px;
+          font-size: 22px !important;
+        }
+        @media (max-width: 768px) {
+          font-size: 20px !important;
         }
       }
     }
