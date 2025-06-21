@@ -164,3 +164,21 @@
     }
   }
 }
+.analytics_page {
+  .seo_price {
+    background: linear-gradient(241deg, #2b72f4 -2.57%, #19428e 73.63%);
+  }
+  .seo_price_item:nth-child(2) {
+    background: #fff;
+    li {
+      border-bottom: 1px solid #eaeaea;
+      color: #222529;
+    }
+    p {
+      color: #222529;
+    }
+    h4 {
+      color: #222529;
+    }
+  }
+}

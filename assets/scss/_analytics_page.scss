@@ -1,0 +1,64 @@
+.analytics_page {
+  .hero {
+    padding: 230px 0;
+    .container {
+      gap: 80px;
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    &_title {
+      text-align: left;
+      padding: 0;
+    }
+    &_left {
+      max-width: 757px;
+      .button {
+        width: fit-content;
+        display: flex;
+        gap: 12px;
+        max-width: 290px;
+        flex: 0 0 auto;
+        span {
+          flex: 0 0 auto;
+        }
+      }
+    }
+    &_img {
+      max-width: 483px;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &_form {
+      margin-top: 50px;
+      label {
+        max-width: 435px;
+      }
+    }
+  }
+  .seo_price {
+    .seo_price_item {
+      padding: 50px 24px;
+      position: relative;
+      overflow: hidden;
+      .toptitle {
+        max-width: 363px;
+        margin: 0 auto;
+        position: absolute;
+        padding: 5px;
+        border-radius: 0 0 30px 30px;
+        background: #2b72f4;
+        text-align: center;
+        top: -1px;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+  }
+}
