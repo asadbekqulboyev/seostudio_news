@@ -43,6 +43,7 @@
       .seo_price_item_content {
         border-color: #4a8aff;
       }
+
       li {
         color: #fff;
         border-color: #4a8aff;
@@ -94,9 +95,8 @@
       }
     }
     &_content {
-      padding-top: 20px;
-      border-top: 1px solid #eaeaea;
-      margin-top: 20px;
+      padding-top: 25px;
+      margin-top: 25px;
       h4 {
         color: #8e939a;
         font-size: 18px;
@@ -127,6 +127,14 @@
         svg {
           flex: 0 0 auto;
         }
+      }
+      p:first-child {
+        color: #8e939a;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
       }
     }
     &_bottom {
@@ -174,7 +182,7 @@
       border-bottom: 1px solid #eaeaea;
       color: #222529;
     }
-    p {
+    p:not(:first-child) {
       color: #222529;
     }
     h4 {

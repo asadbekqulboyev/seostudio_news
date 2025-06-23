@@ -25,3 +25,5 @@ $(".analytics_page_item .button.no_bg").click(function (e) {
   }
 });
 Inputmask('+7 (999) 999-99-99').mask($('input[type="tel"]'))
+$(".comments_item:nth-child(1)").css('height',$('.comments_item:nth-child(2)').height() + $('.comments_item:nth-child(3)').height() + 149 + 'px')
+$(".comments_item:nth-child(3)").css('top',$('.comments_item:nth-child(2)').height() + 135 + 'px')
