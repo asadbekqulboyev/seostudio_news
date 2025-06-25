@@ -1,0 +1,18 @@
+.rewiev .hero {
+  padding: 40px 0;
+}
+.rewiev .hero .container {
+  gap: 140px;
+}
+.rewiev .hero h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 1090px) {
+  .rewiev .hero h2 br {
+    display: none;
+  }
+}/*# sourceMappingURL=rewiev.css.map */

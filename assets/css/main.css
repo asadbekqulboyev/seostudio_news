@@ -1942,6 +1942,11 @@
     display: none;
   }
 }
+.analytics_page .seo_analysis .section_description {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 800px;
+}
 .analytics_page .analytics_page_items {
   gap: 32px;
 }
@@ -2256,6 +2261,25 @@
 @media (max-width: 768px) {
   .analytics_page .consult .consult_form .container {
     padding: 20px;
+  }
+}
+
+.rewiev .hero {
+  padding: 40px 0;
+}
+.rewiev .hero .container {
+  gap: 140px;
+}
+.rewiev .hero h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 1090px) {
+  .rewiev .hero h2 br {
+    display: none;
   }
 }
 
