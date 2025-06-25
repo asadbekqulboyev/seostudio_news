@@ -2253,6 +2253,12 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .analytics_page .consult .consult_form .container {
+    padding: 20px;
+  }
+}
+
 *,
 h1,
 h2,
