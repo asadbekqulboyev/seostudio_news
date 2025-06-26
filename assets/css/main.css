@@ -2271,17 +2271,64 @@
 .rewiev .hero .container {
   gap: 140px;
 }
-.rewiev .hero h2 {
+@media (max-width: 1090px) {
+  .rewiev .hero .container {
+    gap: 32px;
+  }
+}
+.rewiev .hero h2.hero_left {
   color: #fff;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  width: fit-content;
+  flex: 0 0 auto;
 }
 @media (max-width: 1090px) {
-  .rewiev .hero h2 br {
+  .rewiev .hero h2.hero_left br {
     display: none;
   }
+}
+
+.seo_score {
+  padding: 80px 0;
+}
+.seo_score_sidebar {
+  color: #222529;
+}
+.seo_score_sidebar_items {
+  gap: 8px;
+  list-style: none;
+}
+.seo_score_sidebar_items a {
+  height: 56px;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+  text-decoration: none;
+  color: #8e939a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 8px;
+  transition: all 0.2s linear;
+  border-radius: 12px;
+}
+.seo_score_sidebar_items a.last {
+  color: #2b72f4;
+}
+.seo_score_sidebar_items a.active {
+  background: #723deb;
+  color: #fff;
+  border-bottom-color: transparent;
+}
+.seo_score_sidebar_items a:hover {
+  border-radius: 12px;
+  background: #723deb;
+  color: #fff;
+  border-bottom-color: transparent;
 }
 
 *,
