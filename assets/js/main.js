@@ -44,3 +44,23 @@ $('.content_btn').click(function (e) {
 $('.content_btn.items_btn').click(function (e) {
   $(this).toggleClass('active')
 })
+$(".all_content").each(function (index) {
+  $(this).css('height',$(this).children('.no_content').height() + 'px')
+});
+$(window).on('scroll', function () {
+  let scrollPos = $(window).scrollTop();
+
+  $('.seo_score_sidebar_items a').each(function () {
+    let id = $(this).attr('href'); // masalan, #section1
+    let section = $(id);
+
+    if (section.length) {
+      let offsetTop = section.offset().top;
+
+      if (scrollPos >= offsetTop - 10) {
+        $('.seo_score_sidebar_items a').removeClass('active');
+        $(this).addClass('active');
+      }
+    }
+  });
+});
