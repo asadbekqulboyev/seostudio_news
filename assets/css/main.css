@@ -1654,6 +1654,7 @@
 }
 
 .modal .modal-dialog {
+  width: 100%;
   max-width: 1096px;
 }
 .modal .modal-dialog .modal-content {
@@ -3109,6 +3110,49 @@
   text-decoration-line: underline;
   text-decoration-style: solid;
   margin-top: 12px;
+}
+.rewiev .consult {
+  width: 100%;
+  padding: 80px 0 0 0;
+}
+@media (max-width: 768px) {
+  .rewiev .consult {
+    padding: 50px 0 0 0;
+  }
+}
+.rewiev .consult input {
+  max-width: 47% !important;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .rewiev .consult input {
+    max-width: 100% !important;
+  }
+}
+.rewiev .consult input::placeholder {
+  color: #8e939a;
+}
+@media (max-width: 768px) {
+  .rewiev .consult .container {
+    padding: 50px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .rewiev .consult .consult_form {
+    gap: 20px;
+  }
+}
+.rewiev .consult .button {
+  display: flex;
+  gap: 12px;
+  background: #fff !important;
+  color: #2b72f4 !important;
+}
+.rewiev .consult .section_title {
+  font-weight: 600;
+}
+.rewiev .consult .consult_form {
+  margin-top: 50px;
 }
 
 .seo_score {

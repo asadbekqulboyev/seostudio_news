@@ -74,7 +74,7 @@
         font-weight: 600;
         line-height: normal;
         @media (max-width: 768px) {
-        text-align:center; 
+          text-align: center;
         }
       }
     }
@@ -821,5 +821,46 @@
     text-decoration-line: underline;
     text-decoration-style: solid;
     margin-top: 12px;
+  }
+  .consult {
+    width: 100%;
+    padding: 80px 0 0 0;
+    @media (max-width: 768px) {
+      padding: 50px 0 0 0;
+    }
+    input {
+      max-width: 47% !important;
+      background: #fff;
+      @media (max-width: 768px) {
+        max-width: 100% !important;
+      }
+      &::placeholder {
+        color: #8e939a;
+      }
+    }
+    .container {
+      @media (max-width: 768px) {
+        padding: 50px 12px;
+      }
+    }
+    .consult_form {
+      @media (max-width: 768px) {
+        gap: 20px;
+      }
+    }
+    .button {
+      display: flex;
+      gap: 12px;
+      background: #fff !important;
+      color: #2b72f4 !important;
+      
+    }
+
+    .section_title {
+      font-weight: 600;
+    }
+    .consult_form {
+      margin-top: 50px;
+    }
   }
 }
