@@ -2732,8 +2732,11 @@
 .rewiev .content_btn.items_btn {
   display: flex;
 }
-.rewiev .content_btn.items_btn.active img {
+.rewiev .content_btn.items_btn img {
   transform: rotate(180deg);
+}
+.rewiev .content_btn.items_btn.active img {
+  transform: rotate(0deg);
 }
 .rewiev .no_content {
   color: #bebebe;

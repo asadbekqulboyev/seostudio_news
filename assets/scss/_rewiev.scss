@@ -423,9 +423,12 @@
     }
     &.items_btn {
       display: flex;
+      img {
+        transform: rotate(180deg);
+      }
       &.active {
         img {
-          transform: rotate(180deg);
+          transform: rotate(0deg);
         }
       }
     }
@@ -853,7 +856,6 @@
       gap: 12px;
       background: #fff !important;
       color: #2b72f4 !important;
-      
     }
 
     .section_title {
