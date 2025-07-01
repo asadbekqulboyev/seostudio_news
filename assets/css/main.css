@@ -3201,7 +3201,9 @@
   color: #2b72f4;
 }
 .seo_score_sidebar_items a.last img {
-  width: 24px;
+  flex: 0 0 auto;
+  width: 24px !important;
+  height: 24px;
 }
 .seo_score_sidebar_items a.active {
   background: #723deb;
