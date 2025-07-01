@@ -3386,4 +3386,41 @@ body {
 
 .gap-0 {
   gap: 0 !important;
+}
+
+.mobile_rewiev_menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  box-shadow: 0px -16px 29px 0px rgba(0, 0, 0, 0.08);
+  z-index: 1111;
+}
+.mobile_rewiev_menu a {
+  justify-content: space-between;
+  gap: 12px;
+  color: #2b72f4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 360px) {
+  .mobile_rewiev_menu a {
+    font-size: 12px;
+    gap: 8px;
+  }
+}
+.mobile_rewiev_menu a svg {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 1024px) {
+  .mobile_rewiev_menu {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
