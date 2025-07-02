@@ -2709,10 +2709,23 @@
 }
 .rewiev .seo_score_content_left .seo_sircle_body .button:hover {
   border-color: #2b72f4;
+  color: #2b72f4;
+}
+.rewiev .seo_score_content_left .seo_sircle_body .button:focus {
+  border-color: #2b72f4;
+  color: #fff;
 }
 .rewiev .seo_score_content_left .seo_sircle_body .button.no_bg {
   margin-top: 20px;
   border-color: #2b72f4;
+}
+.rewiev .seo_score_content_left .seo_sircle_body .button.no_bg:focus {
+  background-color: #2b72f4;
+  color: #fff;
+}
+.rewiev .seo_score_content_left .seo_sircle_body .button.no_bg:hover {
+  background-color: #2b72f4;
+  color: #fff;
 }
 .rewiev .content_btn {
   display: none;
