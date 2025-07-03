@@ -64,3 +64,20 @@ $(window).on('scroll', function () {
     }
   });
 });
+function updateCommentsLayout() {
+  const secondHeight = $('.comments_item:nth-child(2)').outerHeight();
+  const thirdHeight = $('.comments_item:nth-child(3)').outerHeight();
+
+  $(".analytics_page .comments_item:nth-child(1)").css('height', (secondHeight + thirdHeight ) + 15 +  'px');
+  $(".analytics_page .comments_item:nth-child(3)").css('top', secondHeight + 15 + 'px');
+}
+
+// Sahifa yuklanganda ishga tushadi
+$(document).ready(function () {
+  updateCommentsLayout();
+});
+
+// Oyna o‘lchami o‘zgartirilganda ham ishga tushadi
+$(window).on('resize', function () {
+  updateCommentsLayout();
+});
