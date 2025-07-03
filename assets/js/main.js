@@ -65,11 +65,11 @@ $(window).on('scroll', function () {
   });
 });
 function updateCommentsLayout() {
-  const secondHeight = $('.comments_item:nth-child(2)').outerHeight();
-  const thirdHeight = $('.comments_item:nth-child(3)').outerHeight();
+  const secondHeight = $('.analytics_page .comments_item:nth-child(2)').outerHeight();
+  const thirdHeight = $('.analytics_page .comments_item:nth-child(3)').outerHeight();
 
-  $(".analytics_page .comments_item:nth-child(1)").css('height', (secondHeight + thirdHeight ) + 15 +  'px');
-  $(".analytics_page .comments_item:nth-child(3)").css('top', secondHeight + 15 + 'px');
+  $(".analytics_page .comments_item:nth-child(1)").css('height', (secondHeight + thirdHeight ) + 24 +  'px');
+  $(".analytics_page .comments_item:nth-child(3)").css('top', secondHeight + 24 + 'px');
 }
 
 // Sahifa yuklanganda ishga tushadi

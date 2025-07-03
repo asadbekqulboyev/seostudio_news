@@ -3277,6 +3277,11 @@ body {
 .wrapper {
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .wrapper {
+    overflow: hidden !important;
+  }
+}
 
 .container {
   width: 100%;
